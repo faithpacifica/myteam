@@ -41,7 +41,63 @@
         <section class="contact">
             <div class="container">
                 <div class="contact-inner">
-                    
+                    <div class="contact__left">
+                        <h3 class="contact__left__title">Contact</h3>
+                        <p class="contact__left__subtitle">Ask us about</p>
+                        <ul class="features__list">
+                            <li class="features__item">
+                                <img class="features__item__logo" src="img/icon-circle-man.svg" alt="" width="72"
+                                    height="72">
+                                <p class="features__item__text">The quality of our talent network</p>
+                            </li>
+
+                            <li class="features__item">
+                                <img class="features__item__logo" src="img/icon-circle-check-cog.svg" alt="" width="72"
+                                    height="72">
+                                <p class="features__item__text">Usage & implementation of our software</p>
+                            </li>
+
+                            <li class="features__item">
+                                <img class="features__item__logo" src="img/icon-circle-line-chart.svg" alt="" width="72"
+                                    height="72">
+                                <p class="features__item__text">How we help drive innovation</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form"  action="" method="post">
+                        <div class="input-group">
+                            <input class="input-group__input" type="text" placeholder="Name" name="name" id="name"
+                                required autocomplete="off">
+
+                        </div>
+                        <p class='error-message'>This field is required</p>
+
+                        <div class="input-group">
+                            <input class="input-group__input" type="email" placeholder="Email Address" name="email"
+                                id="email" required>
+                        </div>
+                        <p class='error-message'>This field is required</p>
+
+                        <div class="input-group">
+                            <input class="input-group__input" type="text" placeholder="Company Name" name="company"
+                                id="company" required>
+                        </div>
+                        <p class='error-message'>This field is required</p>
+
+                        <div class="input-group">
+                            <input class="input-group__input" type="text" placeholder="Title" name="title" id="title"
+                                required>
+                        </div>
+                        <p class='error-message'>This field is required</p>
+
+                        <div class="input-group  textarea-group">
+                            <textarea class="input-group__input textarea" name="message" id="msg" placeholder="Message"
+                                required></textarea>
+                        </div>
+
+                        <button class="form__button" type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </section>

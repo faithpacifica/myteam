@@ -134,8 +134,8 @@ ul {
     padding-bottom: 250px;
     background-image: url(../img/hero-circle-dark.svg), url(../img/hero-circle-red.svg);
     background-repeat: no-repeat no-repeat;
-    background-position: left -120px top 65px, right 140px bottom -100px;
-    /* TODO:qanday tugri quyish mumkin */
+    background-position: calc(50% - 730px) 50px, calc(50% + 375px) 415px;
+
 }
 
 .hero__content {
@@ -443,7 +443,7 @@ ul {
     padding-bottom: 120px;
     background-image: url(../img/about-hero-circle.svg);
     background-repeat: no-repeat;
-    background-position:bottom 0 right -100px;
+    background-position: bottom 0 right -100px;
 }
 
 .about__content {
@@ -486,7 +486,7 @@ ul {
     background-color: var(--green);
     background-image: url(../img/directors-circle.svg), url(../img/directors-rect.svg);
     background-repeat: no-repeat;
-    background-position:left -100px top 0,bottom 0 right 0px;
+    background-position: left -100px top 0, bottom 0 right 0px;
 }
 
 .directors__title {
@@ -502,7 +502,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -76px;
-    padding-left: -30px;
+    margin-left: -30px;
     /* TODO: */
 }
 
@@ -568,12 +568,12 @@ ul {
     padding: 20px;
     border-radius: 50%;
     background-color: var(--dirty-pink);
-    left:50%;
+    left: 50%;
     transform: translate(-50%, 50%);
     cursor: pointer;
 }
 
-.more:hover{
+.more:hover {
     background-color: var(--light-green);
 }
 
@@ -584,7 +584,7 @@ ul {
     padding: 20px;
     border-radius: 50%;
     background-color: var(--light-green);
-    left:50%;
+    left: 50%;
     transform: translate(-50%, 50%);
     cursor: pointer;
 }
@@ -592,6 +592,7 @@ ul {
 .exit:hover {
     background-color: var(--dirty-pink);
 }
+
 /* OUR CLIENTS */
 .our-clients {
     padding-top: 140px;
@@ -599,7 +600,7 @@ ul {
     background-color: var(--dark-green);
     background-image: url(../img/clients-circle.svg);
     background-repeat: no-repeat;
-    background-position:left 0px top 0;
+    background-position: left 0px top 0;
 }
 
 .our-clients__title {
@@ -619,17 +620,137 @@ ul {
 
 /* ***************************************** */
 
-.contact{
+.contact {
     padding-top: 47px;
     padding-bottom: 114px;
     background-image: url(../img/contact-top-left.svg), url(../img/contact-right-bottom.svg);
     background-repeat: no-repeat;
-    background-position:left 0px top 0,bottom 0 right 0px;
-   
+    background-position: left 0px top 0, bottom 0 right 0px;
+
 }
 
-.contact-inner{
-    height: 428px;
-    border:1px solid white;
+.contact-inner {
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.contact__left__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+}
+
+.contact__left__subtitle {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--dirty-pink);
+}
+
+.contact__left .features__item {
+    align-items: center;
+}
+
+.contact__left .features__item__text {
+    margin: 0;
+    color: #fff;
+    opacity: 1;
+}
+
+/* FORM */
+
+.contact-form {
+    max-width: 540px;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.input-group:hover {
+    border-bottom-color: var(--light-green);
+}
+
+input {
+    outline: none;
+}
+
+.input-group__input {
+    width: 100%;
+    background-color: var(--background);
+    outline: none;
+    border: none;
+    color: white;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.error-message {
+    position: absolute;
+    display: none;
+    margin: 0;
+    margin-top: 8px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    color: var(--dirty-pink);
+}
+
+.input-group__input::placeholder {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+/* --------------------------------- */
+   /* TODO: NOT WORKING  */
+
+/* .contact-form:invalid .input-group {
+    border-bottom: 1px solid var(--dirty-pink);
+} */
+
+/* 
+.contact-form:invalid .error-message {
+    display:block;
+} */
+
+/* .input-group__input:invalid .input-group__input::placeholder {
+    color: var(--dirty-pink);
+    opacity: 0.6;
+} */
+
+
+/* -------------------------------------- */
+.textarea-group {
+    min-height: 58px;
+}
+
+.textarea {
+    min-width: 100%;
+    width: 100%;
+    resize: none;
+}
+
+.form__button {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 24px;
+    padding: 9px 32px 11px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    color: var(--green);
+    cursor: pointer;
 }
